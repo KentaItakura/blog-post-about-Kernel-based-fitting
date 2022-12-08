@@ -12,7 +12,7 @@ K = zeros(numSample, numSample);
 
 for i =1:numSample
     for j = 1:numSample
-%         diff = (y_observed2(i)-y_observed2(j))^2;
+
         diff = (x_observed(i)-x_observed(j))^2;
         K(i,j) = exp(-beta*diff);
     end
